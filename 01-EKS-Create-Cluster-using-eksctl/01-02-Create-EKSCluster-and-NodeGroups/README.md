@@ -16,9 +16,8 @@
 - It will take 15 to 20 minutes to create the Cluster Control Plane 
 ```
 # Create Cluster
-eksctl create cluster --name=eksdemo1 \
-                      --region=us-east-1 \
-                      --zones=us-east-1a,us-east-1b \
+eksctl create cluster --name=ben-test \
+                      --region=ap-southeast-1 \
                       --without-nodegroup 
 
 # Get List of clusters
@@ -39,8 +38,8 @@ eksctl utils associate-iam-oidc-provider \
 
 # Replace with region & cluster name
 eksctl utils associate-iam-oidc-provider \
-    --region us-east-1 \
-    --cluster eksdemo1 \
+    --region ap-southeast-1 \
+    --cluster ben-test \
     --approve
 ```
 
