@@ -18,6 +18,7 @@
 # Create Cluster
 eksctl create cluster --name=ben-test \
                       --region=ap-southeast-1 \
+                      --zones=ap-southeast-1a, ap-southest-1b \ 
                       --without-nodegroup 
 
 # Get List of clusters
